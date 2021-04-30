@@ -6,8 +6,8 @@
 
 **微注**：参数说明如下，请使用正确签名及传参类型要求，暂时使用内网测试。
 
-**url:       http://192.168.11.99:7002/update_data/index**
-**method: post**
+url:       http://192.168.11.99:7002/update_data/index**
+method: post**
 
 ### 1.1请求参数，No.1表
 
