@@ -1,6 +1,6 @@
 # Fise z z zAPI 后端文档汇总（内部）
 
-**说明** ：该文档用于开发测试需要，如有需要协助或不规范的地方，请联系工作人员邱伟豪，为了您的阅读便利，我们会及时更正错误。感谢您的阅读。
+**说明** ：该文档用于开发测试需要，如有需要协助或不规范的地方，请联系，为了您的阅读便利，我们会及时更正错误。感谢您的阅读。
 
 ## 1.远程更新数据库接口(update_data/index)
 
@@ -66,9 +66,5 @@
 | 返回数据结果|data |是|string||数据|
 
 ### 1.4后端处理逻辑
-
-[图片](https://assets.processon.com/chart_image/608a7b00e0b34d47a71378e6.png )
-
-<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:1050px; height:400px;" src="https://www.processon.com/embed/608a7affe0b34d47a71378e3">
-</iframe>
+https://www.processon.com/view/link/608baf031e085313505a6966
 
