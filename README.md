@@ -6,8 +6,9 @@
 
 **微注**：参数说明如下，请使用正确签名及传参类型要求，暂时使用内网测试。
 
-url:       http://192.168.11.99:7002/update_data/index**
-method: post**
+url:http://192.168.11.99:7002/update_data/index
+<br/>
+method: post
 
 ### 1.1请求参数，No.1表
 
@@ -27,8 +28,10 @@ method: post**
 ### 1.2密签名参数，No.2表
 
 **微注**：加密方式使用hmac(sha256)加密机制,优点是不可逆,防爆。加密需要做`encoding ='utf8'`转换
-**步骤1**：拼接字符串：str="nonce=123123&timestamp=123123&ip=192.168.11.99&api_key=123"
-**步骤2**：使用api_key加密成签名如下方法：
+<br/>
+步骤1：拼接字符串：str="nonce=123123&timestamp=123123&ip=192.168.11.99&api_key=123"
+<br/>
+步骤2：使用api_key加密成签名如下方法：
 `crypto.createHmac('SHA256', api_key).update(str,encoding).digest('hex');`
 
 | 字段名       | 变量名  |  必填 |  类型 |示例值|  描述|
@@ -50,11 +53,6 @@ method: post**
 
 }```
 ```
-
-**微注**：加密方式使用hmac(sha256)加密机制,优点是不可逆,防爆。加密需要做`encoding ='utf8'`转换
-**步骤1**：拼接字符串：str="nonce=123123&timestamp=123123&ip=192.168.11.99&api_key=123"
-**步骤2**：使用api_key加密成签名如下方法：
-`crypto.createHmac('SHA256', api_key).update(str,encoding).digest('hex');`
 
 | 字段名       | 变量名  |  必填 |  类型 |示例值|  描述|
 | :--------  | :-----  | :----:  | :----:  | :----:  | :----:  |
