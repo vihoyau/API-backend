@@ -14,7 +14,7 @@ method: post
 
 | 字段名       | 变量名  |  必填 |  类型 |示例值|  描述|
 | :--------  | :-----  | :----:  | :----:  | :----:  | :----:  |
-| sql注入操作 | sql_type|是|boolean|true、false|进行sql操作,唯一,如果使用true则其他参数失效|
+| sql注入操作 | sql_type|是|boolean|1是、0否|进行sql操作,唯一,如果使用true则其他参数失效|
 | 操作类型 | operation_type |是|string|update、select、insert|不支持delete,不需要则传"error"|
 | sql语句 |sql_str |是|string|select * from table|如果不需要sql注入操作,则传"error"|
 | 查询条件字段 |where_pro |是|string|{"OrderNo":"123","IMEI":"123"}|json对象转成string后,再传,如果没有参数传"error"|
