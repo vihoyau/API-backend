@@ -19,7 +19,7 @@ method: post
 | sql语句 |sql_str |是|string|select * from table|如果不需要sql注入操作,则传"error"|
 | 批量查询条件字段 |where_pro |是|string|{"OrderNo":"123","IMEI":"123"}|object->string json对象转成string后,再传,如果没有参数传"error"|
 | 单个需要更新的json字段集 |update_obj |是|string|{"ICCID":"123"}|object->string json对象转成string后,再传,如果没有参数传"error"|
-| 批量查询及更新 |wher_update_arr |是|string|[{update_obj:{"ICCID":"123"},where_obj:{"OrderNo":"123","IMEI":"123"}}]|arr->string json对象转成string后,再传,如果没有参数传"error"|
+| 批量查询及更新 |where_update_arr |是|string|[{update_obj:{"ICCID":"123"},where_obj:{"OrderNo":"123","IMEI":"123"}}]|arr->string json对象转成string后,再传,如果没有参数传"error"|
 | 随机数 | nonce |是|string|随机10位数|请求端需要对该值记录，避免重复请求|
 | 加密密钥|api_key |是|string|不可见|签名密钥,请保管好|
 | 当前时间戳 |timestamp |是|string|"1619764922000"|13位毫秒级别时间戳,默认凌晨3点更新,需要协商|
