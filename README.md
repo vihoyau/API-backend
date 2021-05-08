@@ -18,7 +18,7 @@ method: post
 | 操作类型 | operation_type |是|string|update、select、insert|不支持delete,不需要则传"error"|
 | sql语句 |sql_str |是|string|select * from table|如果不需要sql注入操作,则传"error"|
 | 查询条件字段 |where_pro |是|string|{"OrderNo":"123","IMEI":"123"}|json对象转成string后,再传,如果没有参数传"error"|
-| 需要更新的json字段集 |update_obj |是|string|2|json对象转成string后,再传,如果没有参数传"error"|
+| 需要更新的json字段集 |update_obj |是|string|{"OrderNo":"123","IMEI":"123"}|json对象转成string后,再传,如果没有参数传"error"|
 | 随机数 | nonce |是|string|随机10位数|请求端需要对该值记录，避免重复请求|
 | 加密密钥|api_key |是|string|不可见|签名密钥,请保管好|
 | 当前时间戳 |timestamp |是|string|"1619764922000"|13位毫秒级别时间戳,默认凌晨3点更新,需要协商|
