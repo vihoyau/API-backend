@@ -79,8 +79,8 @@ method: post
 ```json
 {
 "operation_type":"update",//更新字段
-"sql_type":0,//非sql注入
-"sql_str":"error",//查询语句error
+"sql_type":0,// 1sql注入 0非注入
+"sql_str":"error",//sql查询语句error
 "where_update_arr":"[{\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"11\"}},{\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"12\"}},{\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"13\"}},{\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"14\"}},{\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"15\"}}]",//每个更新的数据，对应一个查询条件
 "where_pro":"error",//查询条件语句error
 "update_obj":"error",//更新字段语句error
@@ -96,7 +96,7 @@ method: post
 ```json
 {
 "operation_type":"error",//更新字段
-"sql_type":1,// 1sql注入
+"sql_type":1,// 1sql注入 0非注入
 "sql_str":`select * from aliyunlist where itemid=10`,//查询语句
 "where_update_arr":"error",//批量更新使用error
 "where_pro":"error",//查询条件语句error
@@ -113,8 +113,8 @@ method: post
 ```json
 {
 "operation_type":"error",//更新字段
-"sql_type":1,// 1sql注入
-"sql_str":`select * from aliyunlist where itemid=10`,//查询语句
+"sql_type":0,// 1sql注入 0非注入
+"sql_str":`error`,//查询语句填写error
 "where_update_arr":"error",//批量更新使用error
 "where_pro":"error",//查询条件语句error
 "update_obj":"error",//更新字段语句error
@@ -130,8 +130,8 @@ method: post
 
 {
 "operation_type":"update",//操作类型，如果注入sql填写error
-"sql_type":0,
-"sql_str":"select * from aliyunlist where itemid=10",
+"sql_type":0,// 1sql注入 0非注入
+"sql_str":"error",//sql查询语句error
 "where_update_arr":"error",
 "where_pro":"{\"itemid\":\"14\"}",
 "update_obj":"{\"iccid\":\"14\"}",
