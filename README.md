@@ -66,3 +66,25 @@ method: post
 
 ### 1.4后端处理逻辑
 ![程序设计](https://user-images.githubusercontent.com/30063579/116668639-33115e00-a9d0-11eb-8b4e-a3c6fc2b125b.png)
+
+### 1.5测试示例
+**1.4.1 使用sql注入方式**：更新批量数据，需要序列化每组元数据，
+例如：
+{\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"11\"}}，
+每个更新的数据，对应一个查询条件
+
+```json
+{
+"operation_type":"update",//更新字段
+"sql_type":0,//非sql注入
+"sql_str":"error",//查询语句error
+"where_update_arr":"[{\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"11\"}},{\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"12\"}},{\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"13\"}},{\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"14\"}},{\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"15\"}}]",//每个更新的数据，对应一个查询条件
+"where_pro":"error",//查询条件语句error
+"update_obj":"error",//更新条件语句error
+"nonce":"123111111",//随机数
+"timestamp":"1620415492000",//13位时间戳，也就是毫秒
+"ip":"192.168.11.99",//ip地址
+"sign":"5E99B660941FF5F0C939BD1D81722DE3265689D67C12823ABB80FA65B7695651"//64位签名字符串
+}
+```
+
