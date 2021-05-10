@@ -69,7 +69,7 @@ method: post
 ### 1.4后端处理逻辑
 ![程序设计](https://user-images.githubusercontent.com/30063579/116668639-33115e00-a9d0-11eb-8b4e-a3c6fc2b125b.png)
 
-### 1.5测试示例
+### 1.5测试body示例
 **1.4.1 批量更新**：更新批量数据，需要序列化每组元数据，
 <br/>
 例如：<br/>
