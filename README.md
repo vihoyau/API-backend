@@ -124,3 +124,21 @@ method: post
 "sign":"5E99B660941FF5F0C939BD1D81722DE3265689D67C12823ABB80FA65B7695651"//64位签名字符串
 }
 ```
+**1.4.4 查询数据**：更新某单一条件下的数据。例如更新itemid=10的数据的iccid
+
+```json
+
+{
+"operation_type":"update",//操作类型，如果注入sql填写error
+"sql_type":0,
+"sql_str":"select * from aliyunlist where itemid=10",
+"where_update_arr":"error",
+"where_pro":"{\"itemid\":\"14\"}",
+"update_obj":"{\"iccid\":\"14\"}",
+"nonce":"123111111",
+"timestamp":"1620586838000",
+"ip":"192.168.11.99",
+"sign":"967E85DEFA987BC1401983F8BA31DA96DFBAF2C8C6AC4EAF1F01DFFE763BC472"
+}
+
+```
