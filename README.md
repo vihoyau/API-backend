@@ -91,3 +91,36 @@ method: post
 }
 ```
 
+**1.4.2 使用sql注入方式**：使用sql查询等操作
+
+```json
+{
+"operation_type":"error",//更新字段
+"sql_type":1,// 1sql注入
+"sql_str":`select * from aliyunlist where itemid=10`,//查询语句
+"where_update_arr":"error",//批量更新使用error
+"where_pro":"error",//查询条件语句error
+"update_obj":"error",//更新条件语句error
+"nonce":"123111111",//随机数
+"timestamp":"1620415492000",//13位时间戳，也就是毫秒
+"ip":"192.168.11.99",//ip地址
+"sign":"5E99B660941FF5F0C939BD1D81722DE3265689D67C12823ABB80FA65B7695651"//64位签名字符串
+}
+```
+
+**1.4.3 查询数据**：使用where_pro查询条件
+
+```json
+{
+"operation_type":"error",//更新字段
+"sql_type":1,// 1sql注入
+"sql_str":`select * from aliyunlist where itemid=10`,//查询语句
+"where_update_arr":"error",//批量更新使用error
+"where_pro":"error",//查询条件语句error
+"update_obj":"error",//更新条件语句error
+"nonce":"123111111",//随机数
+"timestamp":"1620415492000",//13位时间戳，也就是毫秒
+"ip":"192.168.11.99",//ip地址
+"sign":"5E99B660941FF5F0C939BD1D81722DE3265689D67C12823ABB80FA65B7695651"//64位签名字符串
+}
+```
