@@ -70,7 +70,7 @@ method: post
 ![程序设计](https://user-images.githubusercontent.com/30063579/116668639-33115e00-a9d0-11eb-8b4e-a3c6fc2b125b.png)
 
 ### 1.5测试示例
-**1.4.1 使用sql注入方式**：更新批量数据，需要序列化每组元数据，
+**1.4.1 批量更新**：更新批量数据，需要序列化每组元数据，
 <br/>
 例如：<br/>
 {\"update_obj\":{\"iccid\":\"1\"},\"where_obj\":{\"itemid\":\"11\"}}，<br/>
