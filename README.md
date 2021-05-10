@@ -8,6 +8,8 @@
 
 url:http://192.168.11.99:7002/update_data/index
 <br/>
+port:8001
+<br/>
 method: post
 
 ### 1.1请求参数，No.1.1表
