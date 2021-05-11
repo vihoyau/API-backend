@@ -24,7 +24,7 @@ method: post
 | 批量查询及更新 |where_update_arr |是|string|[{update_obj:{"ICCID":"123"},where_obj:{"OrderNo":"123","IMEI":"123"}}]|arr->string json对象转成string后,再传,如果没有参数传"error"|
 | 随机数 | nonce |是|string|随机10位数|请求端需要对该值记录，避免重复请求|
 | 加密密钥|api_key |是|string|不可见|签名密钥,请保管好|
-| 当前时间戳 |timestamp |是|string|"1619764922000"|13位毫秒级别时间戳,默认凌晨3点更新,需要协商|
+| 当前时间戳 |timestamp |是|string|"1619764922000"|13位毫秒级别时间戳,当前时间十五分钟内有效,避免被拦截|
 | 请求端ip | ip|是|string|"192.168.11.99"|记录更新请求端|
 | 加密签名 |sign |是|string|16进制hex值|签名请看No.1.2表的规范|
 
