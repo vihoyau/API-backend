@@ -116,7 +116,7 @@ method: post
 "sql_type":0,// 1sql注入 0非注入
 "sql_str":`error`,//查询语句填写error
 "where_update_arr":"error",//批量更新使用error
-"where_pro":"error",//查询条件语句error
+"where_pro":"{\"itemid\":\"14\"}",//查询条件语句error
 "update_obj":"error",//更新字段语句error
 "nonce":"123111111",//随机数
 "timestamp":"1620415492000",//13位时间戳，也就是毫秒
