@@ -6,7 +6,7 @@
 
 **微注**：参数说明如下，请使用正确签名及传参类型要求，暂时使用内网测试。
 
-url:http://192.168.11.17:8001/update_data/index
+url:http://192.168.11.17:9001/update_data/index
 <br/>
 port:8001
 <br/>
