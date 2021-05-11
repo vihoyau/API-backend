@@ -112,7 +112,7 @@ method: post
 
 ```json
 {
-"operation_type":"error",//更新字段
+"operation_type":"select",//查询字段
 "sql_type":0,// 1sql注入 0非注入
 "sql_str":`error`,//查询语句填写error
 "where_update_arr":"error",//批量更新使用error
@@ -124,7 +124,7 @@ method: post
 "sign":"5E99B660941FF5F0C939BD1D81722DE3265689D67C12823ABB80FA65B7695651"//64位签名字符串
 }
 ```
-**1.4.4 查询数据**：更新某单一条件下的数据。例如更新itemid=10的数据的iccid
+**1.4.4 更新个别数据**：更新某单一条件下的数据。例如更新itemid=10的数据的iccid
 
 ```json
 
